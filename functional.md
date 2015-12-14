@@ -4,6 +4,7 @@
 
 ## Functional Specification
 
+'''
 This document should become the functional specification of the project you are working on.
 
 A functional specification describes in great detail how a device or program will appear to an
@@ -31,3 +32,7 @@ Your specification should **not** include the following types of information:
 * Names of any specific files in the project.
 * How you will structure the classes, functions and code in your program.
 * The name of any files or tools that you will use to design the program.
+'''
+
+reactants = (input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants."))
+products = (input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants."))
