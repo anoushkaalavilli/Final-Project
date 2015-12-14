@@ -36,3 +36,4 @@ Your specification should **not** include the following types of information:
 
 reactants = (input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants."))
 products = (input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants."))
+
