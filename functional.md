@@ -46,9 +46,9 @@ elementsinreactants = []
 products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
 if "C" in reactant1:
-    elementsinreactant.append("carbon")
+    elementsinreactants.append("carbon")
 
-print (elementsinreaction)
+print (elementsinreactants)
     
 #if (reactant2) == "c":
     #print ("yes")
