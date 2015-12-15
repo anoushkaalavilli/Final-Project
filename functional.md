@@ -1,6 +1,8 @@
 # Title of Your Project Here
 
-
+'''
+sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python
+'''
 
 ## Functional Specification
 
@@ -35,12 +37,17 @@ Your specification should **not** include the following types of information:
 '''
 
 reactant1 = input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
+reactant1.upper()
 reactant2 = input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
+reactant2.upper()
 
 products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
 if "C" in reactant1:
     print ("yes")
+
+print (reactant1)
+print (reactant2)
     
 #if (reactant2) == "c":
     #print ("yes")
