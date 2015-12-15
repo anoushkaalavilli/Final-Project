@@ -39,10 +39,10 @@ reactant2 = (input("Please enter the reactants of a chemical reaction. Choose a 
 
 products = (input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur."))
 
-if (reactant1) == "C":
+if "C" in (reactant1):
     print ("yes")
-if (reactant2) == "c":
-    print ("yes")
+#if (reactant2) == "c":
+    #print ("yes")
     
     
     
