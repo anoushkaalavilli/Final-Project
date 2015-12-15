@@ -48,8 +48,7 @@ products = input("Please enter the products of a chemical reaction. Choose a che
 if "C" in reactant1:
     elementsinreactant.append("carbon")
 
-print (reactant1)
-print (reactant2)
+print (elementsinreaction)
     
 #if (reactant2) == "c":
     #print ("yes")
