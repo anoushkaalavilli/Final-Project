@@ -41,10 +41,12 @@ reactant1 = reactant1.upper()
 reactant2 = input("Please enter the reactants of a chemical reaction. ")
 reactant2 = reactant2.upper()
 
+elementsinreactants = []
+
 products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
 if "C" in reactant1:
-    print ("yes")
+    elementsinreactant.append("carbon")
 
 print (reactant1)
 print (reactant2)
