@@ -53,6 +53,15 @@ if "2" in reactant1:
 if "C" in reactant1:
     elementsinreactants.append("carbon")
 
+if "H" in reactant1:
+    elementsinreactants.append("hydrogen")
+    
+if "O" in reactant1:
+    elementsinreactants.append("oxygen")
+    
+if "N" in reactant1:
+    elementsinreactants.append("nitrogen")
+
 print (elementsinreactants)
     
     
