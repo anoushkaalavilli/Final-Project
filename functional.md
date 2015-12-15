@@ -49,6 +49,7 @@ if "2" in reactant1:
     subscriptposition = (reactant1.index("2"))
     elementposition = ((subscriptposition) - 1)
     print (elementposition)
+    print (reactant1[elementposition])
 
 
 
