@@ -34,13 +34,14 @@ Your specification should **not** include the following types of information:
 * The name of any files or tools that you will use to design the program.
 '''
 
-reactant1 = (input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur."))
-reactant2 = (input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur."))
+reactant1 = input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
+reactant2 = input("Please enter the reactants of a chemical reaction. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
-products = (input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur."))
+products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
-if "C" in (reactant1):
+if "C" in reactant1:
     print ("yes")
+    
 #if (reactant2) == "c":
     #print ("yes")
     
