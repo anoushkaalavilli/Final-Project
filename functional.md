@@ -47,8 +47,8 @@ products = input("Please enter the products of a chemical reaction. Choose a che
 
 if "2" in reactant1:
     subscriptposition = (reactant1.index("2"))
-    element = ((subscriptposition) - 1)
-    print (element)
+    elementposition = ((subscriptposition) - 1)
+    print (elementposition)
 
 
 
