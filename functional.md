@@ -1,7 +1,7 @@
 # Title of Your Project Here
 
 '''
-sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python
+sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python, http://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python
 '''
 
 ## Functional Specification
@@ -36,7 +36,7 @@ Your specification should **not** include the following types of information:
 * The name of any files or tools that you will use to design the program.
 '''
 
-reactant1 = input("Please enter the reactants of a chemical reaction. ")
+reactant1 = input("Please enter the reactants of a chemical reaction. Enter subscripts after the element's abrreviation. ")
 reactant1 = reactant1.upper()
 reactant2 = input("Please enter the reactants of a chemical reaction. ")
 reactant2 = reactant2.upper()
@@ -45,13 +45,15 @@ elementsinreactants = []
 
 products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
+if "2" in reactant1:
+    print (reactant1.index("2"))
+
+
+
 if "C" in reactant1:
     elementsinreactants.append("carbon")
 
 print (elementsinreactants)
-    
-#if (reactant2) == "c":
-    #print ("yes")
     
     
     
