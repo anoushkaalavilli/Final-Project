@@ -56,8 +56,12 @@ if "3" in reactant1:
     elementposition = ((subscriptposition) - 1)
     elementsinreactants.append(reactant1[elementposition])
     print (elementsinreactants)
-
-
+    
+if int in reactant1:
+    subscriptposition = (reactant1.index("3"))
+    elementposition = ((subscriptposition) - 1)
+    elementsinreactants.append(reactant1[elementposition])
+    print (elementsinreactants)
 
 if "C" in reactant1:
     elementsinreactants.append("carbon")
