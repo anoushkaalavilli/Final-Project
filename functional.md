@@ -84,7 +84,7 @@ print (elementsinreactants)
     
     
     
-    
+#regex
     
     
 # find a way to make the subscript 23 not be mistaken for subscript 2, also, make 2subscript program for all numbers
