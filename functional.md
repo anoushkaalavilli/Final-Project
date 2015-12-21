@@ -47,9 +47,9 @@ print(r.groups())
 elementsinreactants = []
 elementsinreactants.append(r)
 
-print (elementsinreactants)
+print (("elementsinreactants = ")+ (elementsinreactants))
 
-products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
+#products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
 if "2" in reactant1:
     subscriptposition = (reactant1.index("2"))
