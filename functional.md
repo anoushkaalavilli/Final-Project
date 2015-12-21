@@ -41,13 +41,13 @@ import re
 reactant1 = input("Please enter the reactants of a chemical reaction. Enter subscripts after the element's abrreviation. ")
 reactant1 = reactant1.upper()
 
-r = re.search("(([A-Z]+)([0-9]*))?(([A-Z]+)([0-9]*))?(([A-Z]+)([0-9]*))?(([A-Z]+)([0-9]*))?",reactant1)
+r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
 print(r.groups())
 
-reactant2 = input("Please enter the reactants of a chemical reaction. ")
-reactant2 = reactant2.upper()
-
 elementsinreactants = []
+elementsinreacants.append(r)
+
+print (elementsinreactants)
 
 products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
