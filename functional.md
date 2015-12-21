@@ -45,7 +45,7 @@ r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))
 print(r.groups())
 
 elementsinreactants = []
-elementsinreacants.append(r)
+elementsinreactants.append(r)
 
 print (elementsinreactants)
 
