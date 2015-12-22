@@ -1,7 +1,7 @@
 # Title of Your Project Here
 
 '''
-sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python, http://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python, https://docs.python.org/2/library/re.html
+sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python, http://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python, https://docs.python.org/2/library/re.html, Lee Danilek
 '''
 
 ## Functional Specification
@@ -45,7 +45,8 @@ r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))
 print(r.groups())
 
 elementsinreactants = []
-elementsinreactants.append(r)
+elementsinreactants.append(r.groups())
+print (elementsinreactants)
 
 #print (("elementsinreactants = "), (elementsinreactants))
 print (r.group(0))
