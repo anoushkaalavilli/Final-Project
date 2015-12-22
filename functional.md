@@ -1,7 +1,7 @@
 # Title of Your Project Here
 
 '''
-sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python, http://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python
+sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python, http://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python, https://docs.python.org/2/library/re.html
 '''
 
 ## Functional Specification
@@ -47,7 +47,8 @@ print(r.groups())
 elementsinreactants = []
 elementsinreactants.append(r)
 
-print (("elementsinreactants = "), (elementsinreactants))
+#print (("elementsinreactants = "), (elementsinreactants))
+print (r.group(0))
 
 #products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
