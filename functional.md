@@ -72,6 +72,11 @@ value21 = numlist1[3]
 value31 = numlist1[5]
 value41 = numlist1[7]
 
+value12 = numlist1[1]
+value22 = numlist1[3]
+value32 = numlist1[5]
+value42 = numlist1[7]
+
 
     
        
