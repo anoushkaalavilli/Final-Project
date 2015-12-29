@@ -38,9 +38,12 @@ Your specification should **not** include the following types of information:
 
 import re
 
-reactant1 = input("Please enter the reactants of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
+reactant1 = input("Please enter the first reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
 reactant1 = reactant1.upper()
 #reactant1 = (list(reactant1))
+
+reactant2 = input("Please enter the second reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
+reactant2 = reactant2.upper()
 
 print (reactant1)
 
@@ -69,13 +72,12 @@ print (numlist)
 
 #ASSIGNING VALUES
 
-value1 = numlist[1]
-value2 = numlist[3]
-value3 = numlist[5]
-value4 = numlist[7]
+value11 = numlist[1]
+value21 = numlist[3]
+value31 = numlist[5]
+value41 = numlist[7]
 
-print(value1)
-    
+
     
        
        
