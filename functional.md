@@ -65,7 +65,13 @@ for i in (values):
 print (numlist2)
 
 
-#ASSIGNING VALUES
+#ASSIGN VALUES
+
+for i in range(0,100):
+    if numlist1[i] == numlist2[i]:
+        value1 = numlist1[i+1]+numlist2[i+1]
+    else:
+        value2 = 
 
 value11 = numlist1[1]
 value21 = numlist1[3]
@@ -76,6 +82,10 @@ value12 = numlist2[1]
 value22 = numlist2[3]
 value32 = numlist2[5]
 value42 = numlist2[7]
+
+
+#CHECK IF EQUAL
+
 
     
        
