@@ -53,6 +53,7 @@ print (r.group(0))
 
 #products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
+'''
 if "2" in reactant1:
     subscriptposition = (reactant1.index("2"))
     elementposition = ((subscriptposition) - 1)
@@ -64,13 +65,12 @@ if "3" in reactant1:
     elementposition = ((subscriptposition) - 1)
     elementsinreactants.append(reactant1[elementposition])
     print (elementsinreactants)
-'''   
+  
 if int in reactant1:
     subscriptposition = (reactant1.index(int))
     elementposition = ((subscriptposition) - 1)
     elementsinreactants.append(reactant1[elementposition])
     print (elementsinreactants)
-'''
 
 if "C" in reactant1:
     elementsinreactants.append("carbon")
@@ -83,6 +83,7 @@ if "O" in reactant1:
     
 if "N" in reactant1:
     elementsinreactants.append("nitrogen")
+'''
 
     
     
