@@ -69,9 +69,11 @@ print (numlist2)
 
 for i in range(0,100):
     if numlist1[i] == numlist2[i]:
-        value1 = numlist1[i+1]+numlist2[i+1]
-    else:
-        value2 = 
+        numlist1 = [int(i) for i in numlist1]
+        numlist2 = [int(i) for i in numlist2]
+        value1 = (numlist1[i+1])+(numlist2[i+1])
+        print (value1)
+
 
 value11 = numlist1[1]
 value21 = numlist1[3]
