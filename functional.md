@@ -4,7 +4,7 @@
 sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python, http://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python, https://docs.python.org/2/library/re.html, Lee Danilek
 '''
 
-## Functional Specification
+# Functional Specification
 
 '''
 This document should become the functional specification of the project you are working on.
@@ -55,15 +55,27 @@ elementsinreactants.append(r.groups())
 #print (("elementsinreactants = "), (elementsinreactants))
 #print (r.group(0))
 
-#alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
+alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
 
 numlist = []
 
-for i in range(0, len(r.groups())):
-    if type(r.groups()[i]) == int:
-        numlist.append(i)
+values = [1,2,4,5,7,8,10,11]
 
+for i in (values):
+    numlist.append(r.groups()[i])
+    
 print (numlist)
+
+    
+    
+       
+       
+       
+       
+       
+       
+       
+
 
 
 
