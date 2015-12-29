@@ -77,7 +77,7 @@ value22 = numlist2[3]
 value32 = numlist2[5]
 value42 = numlist2[7]
 
-
+print ((value11), (value21))
     
        
        
