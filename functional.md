@@ -38,16 +38,19 @@ Your specification should **not** include the following types of information:
 
 import re
 
-reactant1 = input("Please enter the reactants of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript "1" after it. Please limit your reactant to four elements. ")
+reactant1 = input("Please enter the reactants of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
 reactant1 = reactant1.upper()
 reactant1 = (list(reactant1))
 
 print (reactant1)
 
-r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
-print(r.groups())
+r= (re.search(""))
+#r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
+#print(r.groups())
 
-#for i in (reactant1):
+for i in range(0, (len(reactant1))):
+    r.append((([A-Za-z]+)([0-9]*))?)
+    print (r.groups())
     
 
 elementsinreactants = []
