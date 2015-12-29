@@ -44,7 +44,7 @@ reactant1 = (list(reactant1))
 
 print (reactant1)
 
-r= ()
+r= []
 #r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
 #print(r.groups())
 
