@@ -66,6 +66,15 @@ for i in (values):
     
 print (numlist)
 
+
+#ASSIGNING VALUES
+
+value1 = numlist[1]
+value2 = numlist[3]
+value3 = numlist[5]
+value4 = numlist[7]
+
+print(value1)
     
     
        
