@@ -67,12 +67,14 @@ print (numlist2)
 
 #ASSIGN VALUES
 
+elementvalues = []
+
 for i in range(0,100):
     if numlist1[i] == numlist2[i]:
-        numlist1 = [int(i) for i in numlist1]
-        numlist2 = [int(i) for i in numlist2]
         value1 = (numlist1[i+1])+(numlist2[i+1])
-        print (value1)
+        elementvalues.append(value1)
+    
+print (elementvalues)
 
 
 value11 = numlist1[1]
