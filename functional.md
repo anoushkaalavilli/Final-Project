@@ -50,21 +50,24 @@ print(r.groups())
 
 elementsinreactants = []
 elementsinreactants.append(r.groups())
-print (elementsinreactants)
+#print (elementsinreactants)
 
 #print (("elementsinreactants = "), (elementsinreactants))
 #print (r.group(0))
 
-alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
+#alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
 
 numlist = []
+
 for i in range(0, len(r.groups())):
-    print ("hello!")
+    if type(r.groups()[i]) == int:
+        numlist.append(i)
+
+print (numlist)
 
 
 
-
-products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
+#products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
 
 '''
