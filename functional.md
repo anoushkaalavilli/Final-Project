@@ -40,42 +40,34 @@ import re
 
 reactant1 = input("Please enter the first reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
 reactant1 = reactant1.upper()
-#reactant1 = (list(reactant1))
 
 reactant2 = input("Please enter the second reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
 reactant2 = reactant2.upper()
 
-print (reactant1)
-
 r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
 print(r.groups())
-    
 
-elementsinreactants = []
-elementsinreactants.append(r.groups())
-#print (elementsinreactants)
+l = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant2)
+print(l.groups())
 
-#print (("elementsinreactants = "), (elementsinreactants))
-#print (r.group(0))
+#alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
 
-alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
-
-numlist = []
+numlist1 = []
 
 values = [1,2,4,5,7,8,10,11]
 
 for i in (values):
-    numlist.append(r.groups()[i])
+    numlist1.append(r.groups()[i])
     
-print (numlist)
+print (numlist1)
 
 
 #ASSIGNING VALUES
 
-value11 = numlist[1]
-value21 = numlist[3]
-value31 = numlist[5]
-value41 = numlist[7]
+value11 = numlist1[1]
+value21 = numlist1[3]
+value31 = numlist1[5]
+value41 = numlist1[7]
 
 
     
