@@ -44,12 +44,12 @@ reactant1 = (list(reactant1))
 
 print (reactant1)
 
-r= (re.search(""))
+r= []
 #r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
 #print(r.groups())
 
 for i in range(0, (len(reactant1))):
-    r.append((([A-Za-z]+)([0-9]*))?)
+    r.append("(([A-Za-z]+)([0-9]*))?")
     print (r.groups())
     
 
@@ -57,8 +57,8 @@ elementsinreactants = []
 elementsinreactants.append(r.groups())
 print (elementsinreactants)
 
-print (("elementsinreactants = "), (elementsinreactants))
-print (r.group(0))
+#print (("elementsinreactants = "), (elementsinreactants))
+#print (r.group(0))
 
 #products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
