@@ -58,7 +58,7 @@ print (elementsinreactants)
 alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
 
 numlist = []
-for i in range(0, len(r)):
+for i in range(0, len(r.groups())):
     print ("hello!")
 
 
