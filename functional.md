@@ -61,7 +61,7 @@ print (numlist1)
 numlist2 = []
 values = [1,2,4,5,7,8,10,11]
 for i in (values):
-    numlist2.append(r.groups()[i])
+    numlist2.append(l.groups()[i])
 print (numlist2)
 
 
