@@ -53,13 +53,16 @@ print(l.groups())
 #alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
 
 numlist1 = []
-
 values = [1,2,4,5,7,8,10,11]
-
 for i in (values):
     numlist1.append(r.groups()[i])
-    
 print (numlist1)
+
+numlist2 = []
+values = [1,2,4,5,7,8,10,11]
+for i in (values):
+    numlist2.append(r.groups()[i])
+print (numlist2)
 
 
 #ASSIGNING VALUES
