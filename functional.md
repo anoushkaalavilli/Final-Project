@@ -62,8 +62,11 @@ numlist1 = []
 numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist1.append(r.groups()[i])
-numlist1 = float(str(numlist1))
 print (numlist1)
+
+for i in (numlist1):
+    numlist1[i] = int(numlist1[i])
+    print numlist1
 
 assignlist2 = []
 assignvalues = [1,2,4,5,7,8,10,11]
