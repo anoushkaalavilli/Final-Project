@@ -56,26 +56,24 @@ numlist1 = []
 values = [1,2,4,5,7,8,10,11]
 for i in (values):
     numlist1.append(r.groups()[i])
+numlist1 = float(numlist1)
 print (numlist1)
 
 numlist2 = []
 values = [1,2,4,5,7,8,10,11]
 for i in (values):
     numlist2.append(l.groups()[i])
+numlist2 = float(numlist2)
 print (numlist2)
 
 
 #ASSIGN VALUES
 
-elementvalues = []
 values_list = [0,2,4,6]
 for i in range(values_list):
     for j in range(values_list):
         if numlist1[i] == numlist2[j]:
             value1 = numlist1[i]+numlist2[j]
-    
-print (elementvalues)
-
 
 value11 = numlist1[1]
 value21 = numlist1[3]
