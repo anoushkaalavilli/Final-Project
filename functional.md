@@ -66,7 +66,7 @@ print (numlist1)
 
 for i in (numlist1):
     numlist1[i] = int(numlist1[i])
-    print numlist1
+    print (numlist1)
 
 assignlist2 = []
 assignvalues = [1,2,4,5,7,8,10,11]
