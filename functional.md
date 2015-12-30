@@ -78,7 +78,8 @@ for i in (0,2,4,6):
     reactant2vals[(assignlist2[i])] = [(assignlist2[i+1])]
 print(("dictionary2="), (reactant2vals))
 
-
+bothreactantvals = ((reactant1vals) + (reactant2vals))
+print (("BOTH DICTIONARIES="), (bothreactantvals))
 
 numlist1 = []
 numvalues = [2,5,8,11]
