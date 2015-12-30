@@ -54,19 +54,16 @@ print(l.groups())
 
 element_reactant_vals = []
 
-for i in (0,3,6,9):
-    element_reactant_vals.append(r.groups()[i])
-    element_reactant_vals.append(l.groups()[i])
-    
-((element_reactant_vals).sort())
-    
-print (("elementvals="), (element_reactant_vals))
 
 assignlist1 = []
 assignvalues = [1,2,4,5,7,8,10,11]
 for i in (assignvalues):
     assignlist1.append(r.groups()[i])
 print (assignlist1)
+
+for i in assignlist1:
+    reactant1vals = {}
+    reactant1vals.append(assignlist1[i]):(assignlist[i+1])
 
 numlist1 = []
 numvalues = [2,5,8,11]
