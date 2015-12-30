@@ -58,7 +58,9 @@ for i in (0,3,6,9):
     element_reactant_vals.append(r.groups()[i])
     element_reactant_vals.append(l.groups()[i])
     
-print (("elementvals="), (elementvals))
+((element_reactant_vals).sort())
+    
+print (("elementvals="), (element_reactant_vals))
 
 assignlist1 = []
 assignvalues = [1,2,4,5,7,8,10,11]
