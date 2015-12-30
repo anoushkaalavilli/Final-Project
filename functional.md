@@ -64,7 +64,7 @@ print (assignlist1)
 reactant1vals = {}
 for i in (0,2,4,6):
     reactant1vals[(assignlist1[i])] = [(assignlist1[i+1])]
-print(("dictionary="), (reactant1vals))
+print(("dictionary1="), (reactant1vals))
 
 
 assignlist2 = []
