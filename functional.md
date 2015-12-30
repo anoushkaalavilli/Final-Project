@@ -67,10 +67,10 @@ reactant1vals = {}
     #reactant1vals.append(assignlist1[i]):(assignlist[i+1])
 
 
-for i in range(0,(len(assignlist1)):
+for i in range(0, (len(assignlist1)-1)):
     reactant1vals[(assignlist1[i])] = [(assignlist1[i+1])]
 
-print(("REACTANT!!!!!"), (reactant1vals))
+print(("dictionary="), (reactant1vals))
 
 
 
@@ -100,6 +100,7 @@ numvalues = [2,5,8,11]
 
 #ASSIGN VALUES
 
+'''
 values_list = [0,2,4,6]
 for i in range(values_list):
     for j in range(values_list):
@@ -135,6 +136,7 @@ value42 = numlist2[7]
 #products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
 
+'''
 '''
 if "2" in reactant1:
     subscriptposition = (reactant1.index("2"))
