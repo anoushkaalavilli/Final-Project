@@ -59,10 +59,10 @@ for i in (assignvalues):
 print (assignlist1)
 
 numlist1 = []
-numvalues = [2,5]
+numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist1.append(r.groups()[i])
-numlist1 = float(numlist1)
+numlist1 = float(str(numlist1))
 print (numlist1)
 
 assignlist2 = []
@@ -72,10 +72,10 @@ for i in (assignvalues):
 print (assignlist2)
 
 numlist2 = []
-numvalues = [2,5]
+numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist2.append(r.groups()[i])
-numlist2 = float(numlist2)
+numlist2 = float(str(numlist2))
 print (numlist2)
 
 
