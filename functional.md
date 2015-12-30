@@ -61,9 +61,12 @@ for i in (assignvalues):
     assignlist1.append(r.groups()[i])
 print (assignlist1)
 
+reactant1vals = {}
+
 for i in assignlist1:
-    reactant1vals = {}
     reactant1vals.append(assignlist1[i]):(assignlist[i+1])
+
+print(("REACTANT!!!!!"), (reactant1vals))
 
 numlist1 = []
 numvalues = [2,5,8,11]
