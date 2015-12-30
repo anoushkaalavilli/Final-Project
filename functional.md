@@ -52,17 +52,29 @@ print(l.groups())
 
 #alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
 
+assignlist1 = []
+assignvalues = [1,2,4,5,7,8,10,11]
+for i in (assignvalues):
+    assignlist1.append(r.groups()[i])
+print (assignlist1)
+
 numlist1 = []
-values = [1,2,4,5,7,8,10,11]
-for i in (values):
+numvalues = [2,5,8,11]
+for i in (numvalues):
     numlist1.append(r.groups()[i])
 numlist1 = float(numlist1)
 print (numlist1)
 
+assignlist2 = []
+assignvalues = [1,2,4,5,7,8,10,11]
+for i in (assignvalues):
+    assignlist2.append(r.groups()[i])
+print (assignlist2)
+
 numlist2 = []
-values = [1,2,4,5,7,8,10,11]
-for i in (values):
-    numlist2.append(l.groups()[i])
+numvalues = [2,5,8,11]
+for i in (numvalues):
+    numlist2.append(r.groups()[i])
 numlist2 = float(numlist2)
 print (numlist2)
 
