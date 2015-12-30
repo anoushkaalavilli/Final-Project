@@ -63,10 +63,15 @@ print (assignlist1)
 
 reactant1vals = {}
 
-for i in assignlist1:
-    reactant1vals.append(assignlist1[i]):(assignlist[i+1])
+#for i in assignlist1:
+    #reactant1vals.append(assignlist1[i]):(assignlist[i+1])
 
-print(("REACTANT!!!!!"), (reactant1vals))
+#print(("REACTANT!!!!!"), (reactant1vals))
+
+for i in range(1,100):
+    reactant1vals[(assignlist1[i])] = [(assignlist1[i+1])]
+
+
 
 numlist1 = []
 numvalues = [2,5,8,11]
