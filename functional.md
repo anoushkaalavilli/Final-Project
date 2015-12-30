@@ -65,7 +65,7 @@ for i in (numvalues):
 print (numlist1)
 
 for i in (numlist1):
-    numlist1[i] = float(numlist1[i])
+    numlist1[i] = int(float(numlist1[i]))
     print (numlist1)
 
 assignlist2 = []
