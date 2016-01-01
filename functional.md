@@ -44,11 +44,19 @@ reactant1 = reactant1.upper()
 reactant2 = input("Please enter the second reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
 reactant2 = reactant2.upper()
 
-product1
+product1 = input("Please enter your first product. ")
+product1 = product1.upper()
+
+product2 = input("Please enter your second product. ")
+product2 = product2.upper()
 
 r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
 
 l = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant2)
+
+k = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",product1)
+
+g = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",product2)
 
 #ASSIGNING REACTANT VALUES
 
