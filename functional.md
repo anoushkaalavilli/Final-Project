@@ -59,7 +59,7 @@ assignlist1 = []
 assignvalues = [1,2,4,5,7,8,10,11]
 for i in (assignvalues):
     assignlist1.append(r.groups()[i])
-print (assignlist1)
+print (("ASSIGNLIST1="),(assignlist1))
 
 reactant1vals = {}
 for i in (0,2,4,6):
@@ -71,21 +71,12 @@ assignlist2 = []
 assignvalues = [1,2,4,5,7,8,10,11]
 for i in (assignvalues):
     assignlist2.append(l.groups()[i])
-print (assignlist2)
+print (("ASSIGNLIST2="),(assignlist2))
 
 reactant2vals = {}
 for i in (0,2,4,6):
     reactant2vals[(assignlist2[i])] = [(assignlist2[i+1])]
 print(("dictionary2="), (reactant2vals))
-
-'''
-vals = []
-for i in reactant1vals:
-    for j in reactant2vals:
-        if i == j:
-            vals.append(reactant1vals[i] + reactant2vals[j])
-print (("VALS="), (vals))
-'''
 
 
 
@@ -108,13 +99,15 @@ numlist2_ints = []
 for i in numlist2:
     i = int(i)
     numlist2_ints.append(i)
-    
-val1 = numlist1_ints[0]+numlist2_ints[0]
-val2 = numlist1_ints[1]+numlist2_ints[1]
-val3 = numlist1_ints[2]+numlist2_ints[2]
-val4 = numlist1_ints[3]+numlist2_ints[3]
 
-print (("VALS!!="),(val1),(val2),(val3),(val4))
+vals = []
+for i in numlist1_ints:
+    for j in reactant2vals:
+        if i == j:
+            vals.append(reactant1vals[i] + reactant2vals[j])
+print (("VALS="), (vals))
+    
+
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
