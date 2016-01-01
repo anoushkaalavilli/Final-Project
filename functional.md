@@ -114,7 +114,7 @@ val2 = numlist1_ints[1]+numlist2_ints[1]
 val3 = numlist1_ints[2]+numlist2_ints[2]
 val4 = numlist1_ints[3]+numlist2_ints[3]
 
-print ((VALS!!=),(val1),(val2),(val3),(val4))
+print (("VALS!!="),(val1),(val2),(val3),(val4))
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
