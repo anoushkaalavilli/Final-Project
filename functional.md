@@ -58,6 +58,7 @@ k = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))
 
 g = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",product2)
 
+
 #ASSIGNING REACTANT VALUES
 
 assignlist1 = []
@@ -68,6 +69,7 @@ for i in (assignvalues):
 numbers = [1,3,5,7]
 for i in numbers:
     assignlist1[i] = (int(assignlist1[i]))
+assignlist1 = assignlist1.sorted()
 print (("ASSIGNLIST1="),(assignlist1))
 
 assignlist2 = []
@@ -87,6 +89,7 @@ for i in pos:
             reactantvals.append((assignlist1[i+1]) + (assignlist2[j+1]))
 print (("REACTANT VALS="), (reactantvals))
 
+
 #ASSIGNING PRODUCT VALUES
 
 assignlist1 = []
@@ -97,6 +100,7 @@ for i in (assignvalues):
 numbers = [1,3,5,7]
 for i in numbers:
     assignlist1[i] = (int(assignlist1[i]))
+assignlist1 = assignlist1.sorted()
 print (("ASSIGNLIST1="),(assignlist1))
 
 assignlist2 = []
@@ -115,14 +119,15 @@ for i in pos:
         if assignlist1[i] == assignlist2[j]:
             productvals.append((assignlist1[i+1]) + (assignlist2[j+1]))
 print (("PRODUCT VALS="), (productvals))
+
+
+#CHECK IF PRODUCTS AND REACTANTS ARE EQUAL
+
+
+
     
-       
-       
-       
-       
-       
-       
-       
+   
+  
 
 
 
@@ -130,50 +135,9 @@ print (("PRODUCT VALS="), (productvals))
 #products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
 '''
-if "2" in reactant1:
-    subscriptposition = (reactant1.index("2"))
-    elementposition = ((subscriptposition) - 1)
-    elementsinreactants.append(reactant1[elementposition])
-    print (elementsinreactants)
-    
-if "3" in reactant1:
-    subscriptposition = (reactant1.index("3"))
-    elementposition = ((subscriptposition) - 1)
-    elementsinreactants.append(reactant1[elementposition])
-    print (elementsinreactants)
-  
 if int in reactant1:
     subscriptposition = (reactant1.index(int))
     elementposition = ((subscriptposition) - 1)
     elementsinreactants.append(reactant1[elementposition])
     print (elementsinreactants)
 '''
-    
-    
-    
-    
-    
-    
-    
-    
-#regex
-    
-    
-# find a way to make the subscript 23 not be mistaken for subscript 2, also, make 2subscript program for all numbers
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
