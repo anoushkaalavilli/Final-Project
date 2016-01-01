@@ -102,8 +102,8 @@ for i in (numvalues):
 numlist1 = (str(numlist1))
 numlist2 = (str(numlist2))
 
-print (("NUMLIST1="), (numlist11))
-print (("NUMLIST2="), (numlist22))
+print (("NUMLIST1="), (numlist1))
+print (("NUMLIST2="), (numlist2))
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
