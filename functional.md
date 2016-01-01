@@ -82,9 +82,10 @@ for i in numbers:
 print (("ASSIGNLIST2="),(assignlist2))
 
 vals = []
-for i in assignlist1:
-    for j in assignlist2:
-        if i == j:
+pos = [0,2,4,6]
+for i in pos:
+    for j in pos:
+        if assignlist1[i] == assignlist2[j]:
             vals.append((assignlist1[i+1]) + (assignlist2[j+1]))
 print (("VALS="), (vals))
 
