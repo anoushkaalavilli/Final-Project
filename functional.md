@@ -99,8 +99,8 @@ numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist2.append(l.groups()[i])
 
-numlist1 = (str(numlist1))
-numlist2 = (str(numlist2))
+numlist1 = (int(numlist1))
+numlist2 = (int(numlist2))
 
 print (("NUMLIST1="), (numlist1))
 print (("NUMLIST2="), (numlist2))
