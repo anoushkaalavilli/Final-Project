@@ -97,7 +97,7 @@ for i in (numvalues):
 numlist1_ints = []
 for i in numlist1:
     i = int(i)
-    numlist1new.append(i)
+    numlist1_ints.append(i)
 
 numlist2 = []
 numvalues = [2,5,8,11]
@@ -107,7 +107,7 @@ for i in (numvalues):
 numlist2_ints = []
 for i in numlist2:
     i = int(i)
-    numlist2new.append(i)
+    numlist2_ints.append(i)
 
 print (("NUMLIST1="), (numlist1_ints))
 print (("NUMLIST2="), (numlist2_ints))
