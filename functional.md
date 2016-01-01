@@ -78,20 +78,28 @@ for i in (0,2,4,6):
     reactant2vals[(assignlist2[i])] = [(assignlist2[i+1])]
 print(("dictionary2="), (reactant2vals))
 
-
+'''
 vals = []
 for i in reactant1vals:
     for j in reactant2vals:
         if i == j:
             vals.append(reactant1vals[i] + reactant2vals[j])
 print (("VALS="), (vals))
+'''
+
 
 
 numlist1 = []
 numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist1.append(r.groups()[i])
-print (numlist1)
+print (("NUMLIST1="), (numlist1))
+
+numlist2 = []
+numvalues = [2,5,8,11]
+for i in (numvalues):
+    numlist2.append(r.groups()[i])
+print (("NUMLIST2="), (numlist2))
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
