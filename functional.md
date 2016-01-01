@@ -44,16 +44,13 @@ reactant1 = reactant1.upper()
 reactant2 = input("Please enter the second reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
 reactant2 = reactant2.upper()
 
+product1
+
 r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
-print(r.groups())
 
 l = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant2)
-print(l.groups())
 
-#alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
-
-element_reactant_vals = []
-
+#ASSIGNING REACTANT VALUES
 
 assignlist1 = []
 assignvalues = [1,2,4,5,7,8,10,11]
@@ -64,13 +61,6 @@ numbers = [1,3,5,7]
 for i in numbers:
     assignlist1[i] = (int(assignlist1[i]))
 print (("ASSIGNLIST1="),(assignlist1))
-
-
-reactant1vals = {}
-for i in (0,2,4,6):
-    reactant1vals[(assignlist1[i])] = [(assignlist1[i+1])]
-print(("dictionary1="), (reactant1vals))
-
 
 assignlist2 = []
 assignvalues = [1,2,4,5,7,8,10,11]
@@ -89,71 +79,7 @@ for i in pos:
             vals.append((assignlist1[i+1]) + (assignlist2[j+1]))
 print (("VALS="), (vals))
 
-reactant2vals = {}
-for i in (0,2,4,6):
-    reactant2vals[(assignlist2[i])] = [(assignlist2[i+1])]
-print(("dictionary2="), (reactant2vals))
-
-
-
-numlist1 = []
-numvalues = [2,5,8,11]
-for i in (numvalues):
-    numlist1.append(r.groups()[i])
-
-numlist1_ints = []
-for i in numlist1:
-    i = int(i)
-    numlist1_ints.append(i)
-
-numlist2 = []
-numvalues = [2,5,8,11]
-for i in (numvalues):
-    numlist2.append(l.groups()[i])
-
-numlist2_ints = []
-for i in numlist2:
-    i = int(i)
-    numlist2_ints.append(i)
-    
-
-
-#for i in (numlist1):
-    #numlist1[i] = int(float(numlist1[i]))
-    #print (numlist1)
-
-
-
-#numlist2 = []
-#numvalues = [2,5,8,11]
-#for i in (numvalues):
-    #numlist2.append(r.groups()[i])
-#numlist2 = float(str(numlist2))
-#print (numlist2)
-
-
-#ASSIGN VALUES
-
-'''
-
-values_list = [0,2,4,6]
-for i in range(values_list):
-    for j in range(values_list):
-        if numlist1[i] == numlist2[j]:
-            value1 = numlist1[i+1]+numlist2[j+1]
-
-value11 = numlist1[1]
-value21 = numlist1[3]
-value31 = numlist1[5]
-value41 = numlist1[7]
-
-value12 = numlist2[1]
-value22 = numlist2[3]
-value32 = numlist2[5]
-value42 = numlist2[7]
-
-
-#CHECK IF EQUAL
+#ASSIGNING PRODUCT VALUES
 
 
     
@@ -170,8 +96,6 @@ value42 = numlist2[7]
 
 #products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
 
-
-'''
 '''
 if "2" in reactant1:
     subscriptposition = (reactant1.index("2"))
