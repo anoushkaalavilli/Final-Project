@@ -79,17 +79,42 @@ for i in numbers:
     assignlist2[i] = (int(assignlist2[i]))
 print (("ASSIGNLIST2="),(assignlist2))
 
-vals = []
+reactantvals = []
 pos = [0,2,4,6]
 for i in pos:
     for j in pos:
         if assignlist1[i] == assignlist2[j]:
-            vals.append((assignlist1[i+1]) + (assignlist2[j+1]))
-print (("VALS="), (vals))
+            reactantvals.append((assignlist1[i+1]) + (assignlist2[j+1]))
+print (("REACTANT VALS="), (reactantvals))
 
 #ASSIGNING PRODUCT VALUES
 
+assignlist1 = []
+assignvalues = [1,2,4,5,7,8,10,11]
+for i in (assignvalues):
+    assignlist1.append(k.groups()[i])
 
+numbers = [1,3,5,7]
+for i in numbers:
+    assignlist1[i] = (int(assignlist1[i]))
+print (("ASSIGNLIST1="),(assignlist1))
+
+assignlist2 = []
+assignvalues = [1,2,4,5,7,8,10,11]
+for i in (assignvalues):
+    assignlist2.append(g.groups()[i])
+
+for i in numbers:
+    assignlist2[i] = (int(assignlist2[i]))
+print (("ASSIGNLIST2="),(assignlist2))
+
+productvals = []
+pos = [0,2,4,6]
+for i in pos:
+    for j in pos:
+        if assignlist1[i] == assignlist2[j]:
+            productvals.append((assignlist1[i+1]) + (assignlist2[j+1]))
+print (("PRODUCT VALS="), (productvals))
     
        
        
