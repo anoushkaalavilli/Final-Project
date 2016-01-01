@@ -69,7 +69,6 @@ for i in (assignvalues):
 numbers = [1,3,5,7]
 for i in numbers:
     assignlist1[i] = (int(assignlist1[i]))
-assignlist1 = assignlist1.sorted()
 print (("ASSIGNLIST1="),(assignlist1))
 
 assignlist2 = []
@@ -100,7 +99,6 @@ for i in (assignvalues):
 numbers = [1,3,5,7]
 for i in numbers:
     assignlist1[i] = (int(assignlist1[i]))
-assignlist1 = assignlist1.sorted()
 print (("ASSIGNLIST1="),(assignlist1))
 
 assignlist2 = []
