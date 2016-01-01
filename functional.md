@@ -99,11 +99,11 @@ numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist2.append(l.groups()[i])
 
-numlist1 = (str(numlist1))
-numlist2 = (str(numlist2))
+numlist11 = (str(numlist1))
+numlist22 = (str(numlist2))
 
-print (("NUMLIST1="), (numlist1))
-print (("NUMLIST2="), (numlist2))
+print (("NUMLIST1="), (numlist11))
+print (("NUMLIST2="), (numlist22))
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
