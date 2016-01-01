@@ -92,15 +92,17 @@ print (("VALS="), (vals))
 numlist1 = []
 numvalues = [2,5,8,11]
 for i in (numvalues):
+    r.groups()[i] = (int(r.groups()[i])
     numlist1.append(r.groups()[i])
 
 numlist2 = []
 numvalues = [2,5,8,11]
 for i in (numvalues):
+    l.groups()[i] = (int(l.groups()[i]))
     numlist2.append(l.groups()[i])
 
-numlist1 = (int(numlist1))
-numlist2 = (int(numlist2))
+numlist1 = (str(numlist1))
+numlist2 = (str(numlist2))
 
 print (("NUMLIST1="), (numlist1))
 print (("NUMLIST2="), (numlist2))
