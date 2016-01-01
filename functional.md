@@ -59,7 +59,12 @@ assignlist1 = []
 assignvalues = [1,2,4,5,7,8,10,11]
 for i in (assignvalues):
     assignlist1.append(r.groups()[i])
+
+numbers = [1,3,5,7]
+for i in numbers:
+    assignlist1[i] = (int(assignlist1[i]))
 print (("ASSIGNLIST1="),(assignlist1))
+
 
 reactant1vals = {}
 for i in (0,2,4,6):
@@ -71,6 +76,9 @@ assignlist2 = []
 assignvalues = [1,2,4,5,7,8,10,11]
 for i in (assignvalues):
     assignlist2.append(l.groups()[i])
+
+for i in numbers:
+    assignlist2[i] = (int(assignlist2[i]))
 print (("ASSIGNLIST2="),(assignlist2))
 
 reactant2vals = {}
