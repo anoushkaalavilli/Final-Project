@@ -109,11 +109,11 @@ for i in numlist2:
     i = int(i)
     numlist2_ints.append(i)
     
-numlist1_ints = (str(numlist1_ints))
-numlist2_ints = (str(numlist2_ints))
+numlist3_ints = ((numlist1_ints)+(numlist2_ints))
 
 print (("NUMLIST1="), (numlist1_ints))
 print (("NUMLIST2="), (numlist2_ints))
+print (("NUMLIST3="), (numlist3_ints))
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
