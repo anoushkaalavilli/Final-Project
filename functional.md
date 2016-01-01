@@ -94,19 +94,23 @@ numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist1.append(r.groups()[i])
 
+numlist1new = []
 for i in numlist1:
     i = int(i)
+    numlist1new.append(i)
 
 numlist2 = []
 numvalues = [2,5,8,11]
 for i in (numvalues):
     numlist2.append(l.groups()[i])
 
+numlist2new = []
 for i in numlist2:
     i = int(i)
+    numlist2new.append(i)
 
-print (("NUMLIST1="), (numlist1))
-print (("NUMLIST2="), (numlist2))
+print (("NUMLIST1="), (numlist1new))
+print (("NUMLIST2="), (numlist2new))
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
