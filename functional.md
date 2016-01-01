@@ -85,7 +85,7 @@ vals = []
 for i in assignlist1:
     for j in assignlist2:
         if i == j:
-            vals.append(assignlist1[i+1] + assignlist2[j+1])
+            vals.append((assignlist1[i+1]) + (assignlist2[j+1]))
 print (("VALS="), (vals))
 
 reactant2vals = {}
