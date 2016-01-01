@@ -121,7 +121,9 @@ print (("PRODUCT VALS="), (productvals))
 
 #CHECK IF PRODUCTS AND REACTANTS ARE EQUAL
 
-
+dictionary = {'a':30, 'd':20, 'b':40}
+dctionary.sorted()
+print (dictionary)
 
     
    
