@@ -109,11 +109,12 @@ for i in numlist2:
     i = int(i)
     numlist2_ints.append(i)
     
-numlist3_ints = ((numlist1_ints)+(numlist2_ints))
+val1 = numlist1_ints[0]+numlist2_ints[0]
+val2 = numlist1_ints[1]+numlist2_ints[1]
+val3 = numlist1_ints[2]+numlist2_ints[2]
+val4 = numlist1_ints[3]+numlist2_ints[3]
 
-print (("NUMLIST1="), (numlist1_ints))
-print (("NUMLIST2="), (numlist2_ints))
-print (("NUMLIST3="), (numlist3_ints))
+print ((VALS!!=),(val1),(val2),(val3),(val4))
 
 #for i in (numlist1):
     #numlist1[i] = int(float(numlist1[i]))
