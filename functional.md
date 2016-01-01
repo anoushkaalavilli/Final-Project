@@ -81,6 +81,13 @@ for i in numbers:
     assignlist2[i] = (int(assignlist2[i]))
 print (("ASSIGNLIST2="),(assignlist2))
 
+vals = []
+for i in assignlist1:
+    for j in assignlist2:
+        if i == j:
+            vals.append(assignlist1[i+1] + assignlist2[j+1])
+print (("VALS="), (vals))
+
 reactant2vals = {}
 for i in (0,2,4,6):
     reactant2vals[(assignlist2[i])] = [(assignlist2[i+1])]
@@ -107,13 +114,6 @@ numlist2_ints = []
 for i in numlist2:
     i = int(i)
     numlist2_ints.append(i)
-
-vals = []
-for i in numlist1_ints:
-    for j in reactant2vals:
-        if i == j:
-            vals.append(reactant1vals[i] + reactant2vals[j])
-print (("VALS="), (vals))
     
 
 
