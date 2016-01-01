@@ -78,8 +78,14 @@ for i in (0,2,4,6):
     reactant2vals[(assignlist2[i])] = [(assignlist2[i+1])]
 print(("dictionary2="), (reactant2vals))
 
-bothreactantvals = ((reactant1vals) + (reactant2vals))
-print (("BOTH DICTIONARIES="), (bothreactantvals))
+
+vals = []
+for i in reactant1vals:
+    for j in reactant2vals:
+        if i == j:
+            vals.append(reactant1vals[i] + reactant2vals[j])
+print (("VALS="), (vals))
+
 
 numlist1 = []
 numvalues = [2,5,8,11]
@@ -104,11 +110,12 @@ numvalues = [2,5,8,11]
 #ASSIGN VALUES
 
 '''
+
 values_list = [0,2,4,6]
 for i in range(values_list):
     for j in range(values_list):
         if numlist1[i] == numlist2[j]:
-            value1 = numlist1[i]+numlist2[j]
+            value1 = numlist1[i+1]+numlist2[j+1]
 
 value11 = numlist1[1]
 value21 = numlist1[3]
