@@ -112,18 +112,23 @@ transformedmatrixnumber = len(transformedmatrix)
 
 transformedmatrix1 = []
 for i in range(0, transformedmatrixnumber, 2):
-    transformedmatrix1.append([transformedmatrix[i]+(number), transformedmatrix[i+1]+(number)])
+    transformedmatrix1.append([transformedmatrix[i], transformedmatrix[i+1]])
+    
+xnumber = (firstxpoint - transformedmatrix1[0][0])
+ynumber = (firstypoint - transformedmatrix1[0][1])
 
-#print (transformedmatrix1)
+transformedmatrix2 = []
+for i in range(0, transformedmatrixnumber, 2):
+    transformedmatrix2.append([transformedmatrix[i]+xnumber, transformedmatrix[i+1]+ynumber])
 
-number = (firstxpoint - transformedmatrix[0])
-
+'''
 for i in range(npoints*2, 2):
     transformed_point = RectangleAsset(10, 10, noline, black)
     Sprite(transformed_point, (transformedmatrix[i], transformedmatrix[i+1]))
+'''
 
 for i in range(npoints):
-    shape2 = PolygonAsset(transformedmatrix1, noline, turquoise)
+    shape2 = PolygonAsset(transformedmatrix2, noline, turquoise)
     Sprite(shape2)
 
 myapp = App()
