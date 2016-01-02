@@ -3,7 +3,7 @@
 sources: Alg 2H Textbook, my dad
 '''
 
-# Functional Specification
+# The user enters points to form a shape. Then, they select a transformation and the computer graphs the transformed shape.
 
 '''
 This document should become the functional specification of the project you are working on.
