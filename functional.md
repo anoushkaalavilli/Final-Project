@@ -1,7 +1,6 @@
-# Title of Your Project Here
-
+# Matrix Grapher and Transformer
 '''
-sources:http://stackoverflow.com/questions/4877844/how-would-i-check-a-string-for-a-certain-letter-in-python, http://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python, https://docs.python.org/2/library/re.html, Lee Danilek
+sources: Alg 2H Textbook, my dad
 '''
 
 # Functional Specification
@@ -35,109 +34,89 @@ Your specification should **not** include the following types of information:
 * How you will structure the classes, functions and code in your program.
 * The name of any files or tools that you will use to design the program.
 '''
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 
-import re
+npoints = input("How many points would you like? ")
+npoints = int(npoints)
 
-reactant1 = input("Please enter the first reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
-reactant1 = reactant1.upper()
-
-reactant2 = input("Please enter the second reactant of a chemical reaction. Enter subscripts after the element's abrreviation. If there is only one of a certain element, enter the subscript 1 after it. Please limit your reactant to four elements. ")
-reactant2 = reactant2.upper()
-
-product1 = input("Please enter your first product. ")
-product1 = product1.upper()
-
-product2 = input("Please enter your second product. ")
-product2 = product2.upper()
-
-r = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant1)
-
-l = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",reactant2)
-
-k = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",product1)
-
-g = re.search("(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?(([A-Za-z]+)([0-9]*))?",product2)
-
-
-#ASSIGNING REACTANT VALUES
-
-assignlist1 = []
-assignvalues = [1,2,4,5,7,8,10,11]
-for i in (assignvalues):
-    assignlist1.append(r.groups()[i])
-
-numbers = [1,3,5,7]
-for i in numbers:
-    assignlist1[i] = (int(assignlist1[i]))
-print (("ASSIGNLIST1="),(assignlist1))
-
-assignlist2 = []
-assignvalues = [1,2,4,5,7,8,10,11]
-for i in (assignvalues):
-    assignlist2.append(l.groups()[i])
-
-for i in numbers:
-    assignlist2[i] = (int(assignlist2[i]))
-print (("ASSIGNLIST2="),(assignlist2))
-
-reactantvals = []
-pos = [0,2,4,6]
-for i in pos:
-    for j in pos:
-        if assignlist1[i] == assignlist2[j]:
-            reactantvals.append((assignlist1[i+1]) + (assignlist2[j+1]))
-print (("REACTANT VALS="), (reactantvals))
-
-
-#ASSIGNING PRODUCT VALUES
-
-assignlist1 = []
-assignvalues = [1,2,4,5,7,8,10,11]
-for i in (assignvalues):
-    assignlist1.append(k.groups()[i])
-
-numbers = [1,3,5,7]
-for i in numbers:
-    assignlist1[i] = (int(assignlist1[i]))
-print (("ASSIGNLIST1="),(assignlist1))
-
-assignlist2 = []
-assignvalues = [1,2,4,5,7,8,10,11]
-for i in (assignvalues):
-    assignlist2.append(g.groups()[i])
-
-for i in numbers:
-    assignlist2[i] = (int(assignlist2[i]))
-print (("ASSIGNLIST2="),(assignlist2))
-
-productvals = []
-pos = [0,2,4,6]
-for i in pos:
-    for j in pos:
-        if assignlist1[i] == assignlist2[j]:
-            productvals.append((assignlist1[i+1]) + (assignlist2[j+1]))
-print (("PRODUCT VALS="), (productvals))
-
-
-#CHECK IF PRODUCTS AND REACTANTS ARE EQUAL
-
-dictionary = {'a':30, 'd':20, 'b':40}
-dictionary.sorted()
-print (dictionary)
-
+point_matrix = []
+for i in range(npoints):
+    pointx = input("Please enter the x coordinate of your next point. Values should be greater than -1000 and less than 1000. ")
+    pointx = int(pointx)
+    pointy = input("Please enter the y coordinate of your next point. Values should be greater than -1000 and less than 1000. ")
+    pointy = int(pointy)
+    point_matrix.append([pointx, pointy])
     
-   
-  
+transformation = input("What kind of transformation would you like? a) 90 clockwise rotation  b) 90 counter clockwise rotation  c) reflection over y axis  d) reflection over x axis ")
+
+black= Color(0x000000, 1.0)
+pink = Color(0xF70960,1.0)
+turquoise = Color(0x3CFFCB, 1.0)
+noline= LineStyle(0, black)
+
+for i in range(npoints):
+    point = RectangleAsset(10, 10, noline, black)
+    Sprite(point, (point_matrix[i][0], point_matrix[i][1]))
+
+for i in range(npoints):
+    shape1 = PolygonAsset(point_matrix, noline, pink)
+    Sprite(shape1)
+
+transformation_matrix_rotate_ccw = [[0,1], [-1, 0]]
+transformation_matrix_rotate_cw = [[0,-1], [1,0]]
+transformation_matrix_yreflection = [[-1, 0], [0, 1]]
+transformation_matrix_xreflection = [[1,0], [0,-1]]
+
+transformedmatrix = []
+if transformation == "a":
+    for i in range(npoints):
+        tx = (transformation_matrix_rotate_cw[0][0]*point_matrix[i][0])+(transformation_matrix_rotate_cw[0][1]*point_matrix[i][1])
+        tx = tx+1000
+        transformedmatrix.append(tx)
+        ty = (transformation_matrix_rotate_cw[1][0]*point_matrix[i][0])+(transformation_matrix_rotate_cw[1][1]*point_matrix[i][1])
+        ty = ty+1000
+        transformedmatrix.append(ty)
+elif transformation == "b":
+    for i in range(npoints):
+        tx = (transformation_matrix_rotate_ccw[0][0]*point_matrix[i][0])+(transformation_matrix_rotate_ccw[0][1]*point_matrix[i][1])
+        tx = tx+1000
+        transformedmatrix.append(tx)
+        ty = (transformation_matrix_rotate_ccw[1][0]*point_matrix[i][0])+(transformation_matrix_rotate_ccw[1][1]*point_matrix[i][1])
+        ty = ty+1000
+        transformedmatrix.append(ty)
+elif transformation == "c":
+    for i in range(npoints):
+        tx = (transformation_matrix_yreflection[0][0]*point_matrix[i][0])+(transformation_matrix_yreflection[0][1]*point_matrix[i][1])
+        tx = tx+1000
+        transformedmatrix.append(tx)
+        ty = (transformation_matrix_yreflection[1][0]*point_matrix[i][0])+(transformation_matrix_yreflection[1][1]*point_matrix[i][1])
+        ty = ty+1000
+        transformedmatrix.append(ty)
+elif transformation == "d":
+    for i in range(npoints):
+        tx = (transformation_matrix_xreflection[0][0]*point_matrix[i][0])+(transformation_matrix_xreflection[0][1]*point_matrix[i][1])
+        tx = tx+1000
+        transformedmatrix.append(tx)
+        ty = (transformation_matrix_xreflection[1][0]*point_matrix[i][0])+(transformation_matrix_xreflection[1][1]*point_matrix[i][1])
+        ty = ty+1000
+        transformedmatrix.append(ty)
 
 
+transformedmatrixnumber = len(transformedmatrix)
 
+transformedmatrix1 = []
+for i in range(0, transformedmatrixnumber, 2):
+    transformedmatrix1.append([transformedmatrix[i], transformedmatrix[i+1]])
 
-#products = input("Please enter the products of a chemical reaction. Choose a chemical reaction with only two reactants. Choose a chemical reaction with only two reactants. Select reactions containing the elements carbon, hydrogen, nitrogen, oxygen, chlorine, and sulfur.")
+#print (transformedmatrix1)
 
-'''
-if int in reactant1:
-    subscriptposition = (reactant1.index(int))
-    elementposition = ((subscriptposition) - 1)
-    elementsinreactants.append(reactant1[elementposition])
-    print (elementsinreactants)
-'''
+for i in range(npoints*2, 2):
+    transformed_point = RectangleAsset(10, 10, noline, black)
+    Sprite(transformed_point, (transformedmatrix[i], transformedmatrix[i+1]))
+
+for i in range(npoints):
+    shape2 = PolygonAsset(transformedmatrix1, noline, turquoise)
+    Sprite(shape2)
+
+myapp = App()
+myapp.run()
