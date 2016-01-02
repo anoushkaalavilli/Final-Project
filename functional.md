@@ -36,7 +36,7 @@ Your specification should **not** include the following types of information:
 '''
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 
-npoints = input("How many points would you like? ")
+npoints = input("How many points would you like in your shape? ")
 npoints = int(npoints)
 
 point_matrix = []
