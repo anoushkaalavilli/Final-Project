@@ -40,7 +40,13 @@ npoints = input("How many points would you like in your shape? ")
 npoints = int(npoints)
 
 point_matrix = []
-for i in range(npoints):
+firstxpoint = input("Please enter the x coordinate of your first point. Values should be greater than -1000 and less than 1000. ")
+firstxpoint = int(firstxpoint)
+firstypoint = input("Please enter the y coordinate of your first point. Values should be greater than -1000 and less than 1000. ")
+firstypoint = int(firstypoint)
+point_matrix.append([firstxpoint, firstypoint])
+
+for i in range(npoints-1):
     pointx = input("Please enter the x coordinate of your next point. Values should be greater than -1000 and less than 1000. ")
     pointx = int(pointx)
     pointy = input("Please enter the y coordinate of your next point. Values should be greater than -1000 and less than 1000. ")
@@ -71,34 +77,34 @@ transformedmatrix = []
 if transformation == "a":
     for i in range(npoints):
         tx = (transformation_matrix_rotate_cw[0][0]*point_matrix[i][0])+(transformation_matrix_rotate_cw[0][1]*point_matrix[i][1])
-        tx = tx+1000
+        #tx = tx+500
         transformedmatrix.append(tx)
         ty = (transformation_matrix_rotate_cw[1][0]*point_matrix[i][0])+(transformation_matrix_rotate_cw[1][1]*point_matrix[i][1])
-        ty = ty+1000
+        #ty = ty+500
         transformedmatrix.append(ty)
 elif transformation == "b":
     for i in range(npoints):
         tx = (transformation_matrix_rotate_ccw[0][0]*point_matrix[i][0])+(transformation_matrix_rotate_ccw[0][1]*point_matrix[i][1])
-        tx = tx+1000
+        #tx = tx+500
         transformedmatrix.append(tx)
         ty = (transformation_matrix_rotate_ccw[1][0]*point_matrix[i][0])+(transformation_matrix_rotate_ccw[1][1]*point_matrix[i][1])
-        ty = ty+1000
+        #ty = ty+500
         transformedmatrix.append(ty)
 elif transformation == "c":
     for i in range(npoints):
         tx = (transformation_matrix_yreflection[0][0]*point_matrix[i][0])+(transformation_matrix_yreflection[0][1]*point_matrix[i][1])
-        tx = tx+1000
+        #tx = tx+500
         transformedmatrix.append(tx)
         ty = (transformation_matrix_yreflection[1][0]*point_matrix[i][0])+(transformation_matrix_yreflection[1][1]*point_matrix[i][1])
-        ty = ty+1000
+        #ty = ty+500
         transformedmatrix.append(ty)
 elif transformation == "d":
     for i in range(npoints):
         tx = (transformation_matrix_xreflection[0][0]*point_matrix[i][0])+(transformation_matrix_xreflection[0][1]*point_matrix[i][1])
-        tx = tx+1000
+        #tx = tx+500
         transformedmatrix.append(tx)
         ty = (transformation_matrix_xreflection[1][0]*point_matrix[i][0])+(transformation_matrix_xreflection[1][1]*point_matrix[i][1])
-        ty = ty+1000
+        #ty = ty+500
         transformedmatrix.append(ty)
 
 
@@ -106,9 +112,11 @@ transformedmatrixnumber = len(transformedmatrix)
 
 transformedmatrix1 = []
 for i in range(0, transformedmatrixnumber, 2):
-    transformedmatrix1.append([transformedmatrix[i], transformedmatrix[i+1]])
+    transformedmatrix1.append([transformedmatrix[i]+(number), transformedmatrix[i+1]+(number)])
 
 #print (transformedmatrix1)
+
+number = (firstxpoint - transformedmatrix[0])
 
 for i in range(npoints*2, 2):
     transformed_point = RectangleAsset(10, 10, noline, black)
