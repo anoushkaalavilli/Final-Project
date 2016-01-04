@@ -40,9 +40,9 @@ npoints = input("How many points would you like in your shape? ")
 npoints = int(npoints)
 
 point_matrix = []
-firstxpoint = input("Please enter the x coordinate of your first point. Values should be greater than -1000 and less than 1000. ")
+firstxpoint = input("Please enter the x coordinate of your first point. Values should be between 10 and 900. ")
 firstxpoint = int(firstxpoint)
-firstypoint = input("Please enter the y coordinate of your first point. Values should be greater than -1000 and less than 1000. ")
+firstypoint = input("Please enter the y coordinate of your first point. Values should be between 10 and 900. ")
 firstypoint = int(firstypoint)
 point_matrix.append([firstxpoint, firstypoint])
 
