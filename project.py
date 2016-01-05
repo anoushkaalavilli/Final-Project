@@ -47,6 +47,7 @@ firstxpoint = input("Please enter the x coordinate of your first point. Values s
 firstxpoint = int(firstxpoint)
 if firstxpoint > 900:
     print ("Please enter values smaller than 900. ")
+    
 firstypoint = input("Please enter the y coordinate of your first point. Values should be between 10 and 900. ")
 firstypoint = int(firstypoint)
 if firstypoint > 900:
