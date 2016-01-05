@@ -39,11 +39,18 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 npoints = input("How many points would you like in your shape? ")
 npoints = int(npoints)
 
+if npoints > 900:
+    print ("Please enter values smaller than 900. ")
+
 point_matrix = []
 firstxpoint = input("Please enter the x coordinate of your first point. Values should be between 10 and 900. ")
 firstxpoint = int(firstxpoint)
+if firstxpoint > 900:
+    print ("Please enter values smaller than 900. ")
 firstypoint = input("Please enter the y coordinate of your first point. Values should be between 10 and 900. ")
 firstypoint = int(firstypoint)
+if firstypoint > 900:
+    print ("Please enter values smaller than 900. ")
 point_matrix.append([firstxpoint, firstypoint])
 
 for i in range(npoints-1):
@@ -52,7 +59,13 @@ for i in range(npoints-1):
     pointy = input("Please enter the y coordinate of your next point. Values should be greater than -1000 and less than 1000. ")
     pointy = int(pointy)
     point_matrix.append([pointx, pointy])
+
+if pointx > 900:
+    print ("Please enter values smaller than 900. ")
     
+if pointy > 900:
+    print ("Please enter values smaller than 900. ")
+
 transformation = input("What kind of transformation would you like? a) 90 clockwise rotation  b) 90 counter clockwise rotation  c) reflection over y axis  d) reflection over x axis ")
 
 black= Color(0x000000, 1.0)
