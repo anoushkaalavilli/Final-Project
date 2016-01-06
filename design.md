@@ -13,3 +13,8 @@ The design specification should include information like:
 * What data will be stored or manipulated by the program? How will it be encoded and organized?
 * Describe the logic and/or code behind every interaction with the user, and behind everything displayed.
 * If your program uses an unusual or notable *algorithm*, what is the algorithm and how does it work?
+
+1) I used runpython, GitHub, and ggame to create my program.
+2) I used the language on runpython (which is Python 3)
+3) I used input functions to allow for the program to ask the user for coordinates, the number of points the user wants in his or her shape, and what kind of transformation the user wants.
+4) The coordinates the user enters as well as the
