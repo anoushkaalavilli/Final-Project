@@ -17,4 +17,6 @@ The design specification should include information like:
 1) I used runpython, GitHub, and ggame to create my program.
 2) I used the language on runpython (which is Python 3)
 3) I used input functions to allow for the program to ask the user for coordinates, the number of points the user wants in his or her shape, and what kind of transformation the user wants.
-4) The coordinates the user enters as well as the
+4) The coordinates the user enters as well as the kind of transformation are stored as variables. The coordinates are placed in matrices so they can be multplied by transformation matrices (depending on what transformation the user wants).
+5) I used input functions to allow for the program to ask the user for coordinates, the number of points the user wants in his or her shape, and what kind of transformation the user wants.
+6) My program doesn't use an unusual algorithm.
