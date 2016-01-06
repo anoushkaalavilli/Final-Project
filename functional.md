@@ -3,7 +3,7 @@
 sources: Alg 2H Textbook, my dad
 '''
 
-# The user enters points to form a shape. Then, they select a transformation and the computer graphs the transformed shape.
+# The user enters points to form a shape. Then, they select a transformation and the computer graphs the transformed shape and the original shape.
 
 '''
 This document should become the functional specification of the project you are working on.
@@ -18,14 +18,21 @@ Your specification **should include** the following types of information:
 * Summary or introduction. In general, in a few lines or less, what is your program about or what is it about?
 * How does the user access your program? Is it shared via http://runpython.com? Is a web site? Embedded in 
   a single board computer? 
+  The user can access my program through runpython with a link from GitHub.
 * If there are graphics screens involved, describe every screen that the user will experience: what is it for? 
   What did the user have to do to get there and how does she move on to the next?
+  There is one pop up screen. The screen will have two shapes. One shape (the pink one) will be the one that the user made and the other shape (the blue one) will be the transformed shape.
 * For each graphics screen, describe every active control input and what it does. What elements on the screen will
   change in response to user input?
+  The pink shape is dependent on the coordinates the user enters. The blue shape is a transformation of the pink shape. The type of transformation is determined by the user.
 * Does the program respond to mouse input? What, exactly, does the mouse do?
+The program doesn't respond to user input.
 * Does the program respond to keyboard input? How?
+The coordinates of the shape are entered using a keyboard by the user as well as the kind of transformation.
 * What graphical assets will be used?
+The original shape (who's coordinates are entered by the user) and the transformed shape will appear on the screen.
 * Does the user have to do anything to install the program?
+No.
 
 Your specification should **not** include the following types of information:
 
